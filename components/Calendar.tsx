@@ -28,7 +28,7 @@ interface CalendarProps {
   handleSetMood?: (mood: number) => void; // Optional handler
 }
 
-export default function Calendar({ demo, completeData, handleSetMood }: CalendarProps) {
+export default function Calendar({ demo, completeData }: CalendarProps) {
   const now = new Date();
   const currMonth = now.getMonth();
   const [selectedMonth, setSelectMonth] = useState<string>(monthsArr[currMonth]);
